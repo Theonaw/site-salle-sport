@@ -22,7 +22,7 @@ Route::get('/cours', function () {
 });
 
 Route::get('/tarifs', function () {
-    return view('tarif');
+    return view('tarifs');
 });
 
 Route::get('/contact', function () {
@@ -30,5 +30,5 @@ Route::get('/contact', function () {
 });
 
 Route::get('/mentions-legales', function () {
-    return view('mentions-legales   ');
+    return view('mentions-legales');
 });
