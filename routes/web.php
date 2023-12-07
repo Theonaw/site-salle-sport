@@ -13,22 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('accueil');
-});
+Route::get('/', [MainController::class, 'accueil'])->name('accueil.home');
 
-Route::get('/cours', function () {
-    return view('cours');
-});
+Route::get('/cours',[MainController::class, 'cours'])->name('main.home');
 
-Route::get('/tarifs', function () {
-    return view('tarifs');
-});
+Route::get('/tarifs', [MainController::class, 'tarifs'])->name('tarifs.home');
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/contact', [MainController::class, 'contact'])->name('contact.home');
 
-Route::get('/mentions-legales', function () {
-    return view('mentions-legales');
-});
+Route::get('/mentions-legales', [MainController::class, 'mentions-legales'])->name('mentions-legales.home');
