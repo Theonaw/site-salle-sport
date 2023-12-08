@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <h1>Salle de sport CNAM</h1>
         <nav>
             <a href="{{ route('main.accueil') }}">Accueil</a>
             <a href="{{ route('main.cours') }}">Cours</a>
